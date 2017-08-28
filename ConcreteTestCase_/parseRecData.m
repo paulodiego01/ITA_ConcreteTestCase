@@ -15,28 +15,8 @@ if k > 0
         aux = strsplit(recStruct.parameter,'p');
         recStruct.parameter = strcat(aux{1,1},'.',aux{1,2});
     end
-    
-%     
-%     k = strfind(aux{1,2},'EM');
-%     if k>0
-%         aux = strsplit(recStruct.parameter,'EM');
-%         x = str2num(aux{1,1});
-%         y = str2num(aux{1,2});
-%         recStruct.parameter = 0;
-%         h = 
-%         recStruct.parameter = x*realpow(10,-y);
-%     end
-%     
-%     k = strfind(aux{1,2},'E');
-%     if k>0
-%         aux = strsplit(recStruct.parameter,'E');
-%         x = str2num(aux{1,1});
-%         y = str2num(aux{1,2});
-%         recStruct.parameter = x*realpow(10,y);
-%     end
         
-    
-    
+        
     return;
 end
 k =  strfind(recdata,'StrAnswer');
