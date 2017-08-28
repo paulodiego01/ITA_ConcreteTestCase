@@ -10,7 +10,7 @@ clc
 %sec=00.000;
 % ESTE COMANDO GERA A FILA DE BORDO PARA SER COLOCADO NO SIMULADOR 
 %(NA PRIMEIRA ETAPA APENAS ESSE COMANDO DEVE SER USADO)
-%(NA SEGUNDA ETAPA, J¡ COM OS RESULTADO DO SIMULADOR, DEVEM SER USADOS
+%(NA SEGUNDA ETAPA, J√Å COM OS RESULTADO DO SIMULADOR, DEVEM SER USADOS
 %TODOS OS COMANDOS SEGUINTES)
 
 [test_case_filename,test_case_pathname] = uigetfile('*.seq','Select Condado file (.seq)');
@@ -30,16 +30,3 @@ if isstruct(tests) == 0
         return;
     end
 end
-
-
-
-%% Usar estes comandos depois de ter o resultado 
-
-% 
-%tcLog = readSimTClog('TC.csv');
-% 
-%outputLog = readSimOutputLog('HIS_DCS.csv',tcLog);
-
-% finalExit = compareRecDataWithOutput(tests,outputLog);
-% 
-% writeXLSFromCompare(finalExit,'finalExit.xlsx');
