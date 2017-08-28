@@ -1,7 +1,7 @@
-% funÁ„o cria o arquivo da fila de bordo
+% fun√ß√£o cria o arquivo da fila de bordo
 % entrada:  filename - nome do arquivo dos casos de teste ( o arquivo de
-% entrada dos casos de teste segue a formataÁ„o de saida da Condado
-%           y,m,d,h.mn.s - tempo inicial que os testes ser„o aplicados
+% entrada dos casos de teste segue a formata√ß√£o de saida da Condado
+%           y,m,d,h.mn.s - tempo inicial que os testes ser√£o aplicados
 
 function [testCase] = generateBoardQueue(filename,year,month,day,hour,min,sec)
 global filename_txt
@@ -13,7 +13,7 @@ global pathstr
 global name_test_file
 global ext
 
-% entrar com o nome do arquivo sem extensıes
+% entrar com o nome do arquivo sem extens√µes
 %nomeDoArquivo = 'caso1excecoes-testes';
 
 % tempo inicial do teste
@@ -31,14 +31,8 @@ str = datestr(t,'dd-mm-yyyy HH:MM:SS.FFF');
 
 testCase = parseCondado(filename);
 % 
-% % traduzir a express„o lida da condado para comandos da fila de bordo
-% for i = 1:length(testCase)
-%     for j = 1 : length(testCase(i).expression)
-%         
-%         testCase(i).expression{j}.parsed = aux;
-%     end
-% end
-
+% % traduzir a express√£o lida da condado para comandos da fila de bordo
+%
 if isstruct(testCase) == 0
     if testCase == -1 
         return;
