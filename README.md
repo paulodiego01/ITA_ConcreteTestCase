@@ -4,7 +4,7 @@ Este arquivo contém o passo-a-passo de utilização da ferramenta ConcreteTestC
 
 Para execução do programa se faz necessário abrir os arquivos .m no programa MATLAB.
 
-a) Para executar a função de criação da fila de bordo para o simulador é necessário serguir os seguintes passos:
+####a) Para executar a função de criação da fila de bordo para o simulador é necessário serguir os seguintes passos:
  
  1 - Executar o arquivo mainInput.m
  
@@ -15,7 +15,7 @@ a) Para executar a função de criação da fila de bordo para o simulador é ne
  *Após sua execução, a ferramenta gera um arquivo do tipo .txt, com o nome dado mais "_BoardQueue", contendo a fila de bordo 
  prontapara ser importada e executada dentro do simulador.
  
-b) Para executar a função de criação do veredito de teste contendo os resultados da comparação das saídas observadas 
+####b) Para executar a função de criação do veredito de teste contendo os resultados da comparação das saídas observadas 
  da simulação com as saídas esperadas dos casos de teste, é necessário seguir o seguintes passos:
  
  1 - Executar o arquivo mainOutput.m
